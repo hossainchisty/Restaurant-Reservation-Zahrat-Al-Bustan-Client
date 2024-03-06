@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Explore = () => {
   return (
     <section className='w-full py-12 md:py-24 lg:py-32'>
@@ -15,13 +17,11 @@ const Explore = () => {
                 texture.
               </p>
             </div>
-            <a
+            <Link to={'/menu'}
               className='inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white shadow-sm px-8 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900'
-              href='#'
-              rel='ugc'
             >
               Explore the Menu
-            </a>
+            </Link>
           </div>
           <div className='flex items-center justify-center'>
             <img
