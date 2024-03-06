@@ -59,7 +59,7 @@ const Feedback = () => {
                             placeholder='Enter full name'
                             value={formData.name}
                             onChange={handleChange}
-                            className='border-0 px-3 py-3 rounded text-sm shadow w-full bg-white placeholder-black text-gray-800 outline-none focus:bg-white'
+                            className='flex h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 w-full max-w-[300px]'
                             required
                           />
                         </div>
@@ -77,7 +77,7 @@ const Feedback = () => {
                             placeholder='Enter email address'
                             value={formData.email}
                             onChange={handleChange}
-                            className='border-0 px-3 py-3 rounded text-sm shadow w-full bg-white placeholder-black text-gray-800 outline-none focus:bg-white'
+                            className='flex h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 w-full max-w-[300px]'
                             required
                           />
                         </div>
@@ -91,9 +91,10 @@ const Feedback = () => {
                           <div className='border border-gray-300 rounded-md shadow-sm'>
                             <PhoneInput
                               placeholder='Enter phone number'
+                              defaultCountry="BD"
                               value={formData.phoneNumber}
                               onChange={handleChange}
-                              className='border-0 px-3 py-3 rounded text-sm w-full bg-white placeholder-black text-gray-800 outline-none focus:bg-white'
+                              className='flex h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 w-full max-w-[300px]'
                               required
                             />
                           </div>
